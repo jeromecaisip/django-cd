@@ -8,6 +8,8 @@ jobs:
         run: echo "Fist Step"
       - name: Second Step
         run: echo "Second Step"
+      - name: List Files
+        run: ls -la
       - name: Read README.md
         run: cat ../../README.md
    
