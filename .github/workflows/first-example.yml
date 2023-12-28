@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Welcome message
         run: echo "Fist Step"
+      - name: Create directory
+        run: mkdir django-cd && cd django-cd
       - name: Checkout source
         uses: actions/checkout@v4
         with:
@@ -13,6 +15,6 @@ jobs:
       - name: List Files
         run: ls -la
       - name: Read README.md
-        run: cat ../../README.md
+        run: cat README.md
    
        
