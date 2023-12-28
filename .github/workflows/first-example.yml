@@ -9,6 +9,6 @@ jobs:
       - name: Second Step
         run: echo "Second Step"
       - name: Read README.md
-        run: cat README.md
+        run: cat ../../README.md
    
        
