@@ -14,6 +14,7 @@ jobs:
             path: artifact-demo/hello.txt
             retention-days: 1
   artifact_reader:
+    needs: artifact_creator
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
