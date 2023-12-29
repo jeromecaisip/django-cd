@@ -31,6 +31,8 @@ jobs:
         run: sleep 2
       - name: Upload Image to Registry
         run: sleep 2
+      - name: Intentional Fail Command
+        run: djflsjfl
   end_to_end_testing:
     needs:
       - upload_image
