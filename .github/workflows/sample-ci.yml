@@ -4,20 +4,20 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Run linting...
+      - name: Run linting
         run: sleep 5
-   test_coverage:
+  test_coverage:
     runs-on: ubuntu-latest
     steps:
-      - name: Measuring Test Coverage...
+      - name: Measuring Test Coverage
         run: sleep 7
   unit_tests:
     runs-on: ubuntu-latest
     steps:
-      - name: Running Unit Tests...
+      - name: Running Unit Tests
         run: sleep 9
   integration_test:
     runs-on: ubuntu-latest
     steps:
-      - name: Running Integration Tests...
+      - name: Running Integration Tests
         run: sleep 11
