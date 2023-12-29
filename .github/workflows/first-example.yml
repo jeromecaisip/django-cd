@@ -12,9 +12,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-      - name: List Files
-        run: ls -la
-      - name: Read README.md
-        run: cat README.md
+      - name: List and Read Files
+        run: |
+          ls -la
+          cat README.md
    
        
