@@ -22,5 +22,5 @@ jobs:
         with:
           path: artifacts
       - name: Read Artifact
-        run: cat artifacts/artifact-demo/hello.txt
+        run: cat artifacts/hello.txt
 
