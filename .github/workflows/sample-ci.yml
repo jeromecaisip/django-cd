@@ -23,4 +23,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Running Integration Tests
-        run: sleep 11
+        run: sleep 2
+  upload_image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Docker Image
+        run: sleep 2
+      - name: Upload Image to Registry
+        run: sleep 2
+  end_to_end_testing:
+    needs:
+      - upload_image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Environment for E2E Testing 
+        run: sleep 2
+      - name: Run E2E Testing
+        run: sleep 2
+      - name: Cleanup Test Environment
+        run: sleep 2
