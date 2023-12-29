@@ -1,0 +1,23 @@
+name: Continuous Integration (Skeleton)
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run linting...
+        run: sleep 5
+   test_coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Measuring Test Coverage...
+        run: sleep 7
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Unit Tests...
+        run: sleep 9
+  integration_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Integration Tests...
+        run: sleep 11
