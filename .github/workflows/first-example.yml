@@ -12,7 +12,7 @@ jobs:
           ref: main
           path: django-cd
       - name: Update Scripts Permission
-        run: chmod -R g+x django-cd/scripts/
+        run: chmod -R u+x django-cd/scripts/
       - name: List and Read Files
         run: django-cd/scripts/list-and-read.sh
        
