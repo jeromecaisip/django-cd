@@ -17,7 +17,9 @@ jobs:
       - name: Running Unit Tests
         run: sleep 9
   integration_test:
-    needs: unit_tests
+    needs: 
+      - unit_tests
+      - lint
     runs-on: ubuntu-latest
     steps:
       - name: Running Integration Tests
