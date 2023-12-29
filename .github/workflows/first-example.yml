@@ -12,5 +12,5 @@ jobs:
           ref: main
           path: django-cd
       - name: List and Read Files
-        run: scripts/list-and-read.sh
+        run: django-cd/scripts/list-and-read.sh
        
