@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Create an artifact
         run: |
-          echo hello world > touch hello.txt
+          echo hello world > hello.txt
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
