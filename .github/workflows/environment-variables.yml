@@ -1,11 +1,12 @@
 name: Exploring environment variables
+
 on: push
 
 jobs:
   step_level_env_variables:
     runs-on: ubuntu-latest
     steps:
-      name: Setup and read env variables on step level
-      env:
-         MYNAME: jerome
-      run: echo hello $MYNAME
+      - name: Setup and read env variables on step level
+        env:
+          MYNAME: jerome
+        run: echo hello $MYNAME
