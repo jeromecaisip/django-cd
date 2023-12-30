@@ -4,9 +4,13 @@ on: push
 
 jobs:
   step_level_env_variables:
+    env:
+       LEVEL: job
     runs-on: ubuntu-latest
     steps:
       - name: Setup and read env variables on step level
         env:
-          MYNAME: jerome
-        run: echo hello $MYNAME
+          LEVEL: steps
+        run: echo $LEVEL
+      - name: Read job level environment variable
+        run: echo $LEVEL
