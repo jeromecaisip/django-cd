@@ -1,6 +1,8 @@
 name: Exploring environment variables
 
 on: push
+env:
+  LEVEL: workflow
 
 jobs:
   step_level_env_variables:
@@ -13,4 +15,6 @@ jobs:
           LEVEL: steps
         run: echo $LEVEL
       - name: Read job level environment variable
+        run: echo $LEVEL
+      - name: Read workflow level environment variable
         run: echo $LEVEL
