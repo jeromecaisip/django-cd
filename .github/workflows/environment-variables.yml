@@ -17,7 +17,7 @@ jobs:
       - name: Read job level environment variable
         run: echo $LEVEL
 
-   workflow_level_env_variables:
+  workflow_level_env_variables:
      runs-on: ubuntu-latest
      steps:
       - name: Read workflow level environment variable
