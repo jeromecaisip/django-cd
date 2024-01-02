@@ -1,0 +1,16 @@
+name: Exploring Concurrency
+
+on: workflow_dispatch
+
+jobs:
+  deploy_to_production:
+    concurrency:
+      group: production-deploy 
+    steps:
+      - name: Deploy
+        run: |
+          sleep 30
+          echo Deployed to Production
+          
+ 
+
